@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEAEA"
+    android:orientation="vertical"
+    tools:context=".entertrackpeople">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Name and ID of other User whom location you want to track."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#080000"
+        android:textSize="24dp" />
+
+
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Enter Name"-->
+    <!--android:id="@+id/otherusername"/>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/otherusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="#080000"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:textColorHint="#080000"
+            android:textColor="#080000"
+            android:textSize="18sp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Enter phone number "-->
+    <!--android:id="@+id/otherusernumber"-->
+    <!--android:inputType="number"/>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/otherusernumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="#080000"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number with country code"
+            android:textColorHint="#080000"
+            android:textColor="#080000"
+            android:textSize="14sp"
+           />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Enter UID"-->
+    <!--android:id="@+id/UID"-->
+    <!--/>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/UID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="#080000"
+
+       >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter User ID"
+            android:textColorHint="#080000"
+            android:textColor="#080000"
+            android:textSize="18sp"
+           />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/submitotheruser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/roundedbtn"
+        android:text="Submit"
+        android:textColor="@color/colorPrimary" />
+
+
+</LinearLayout>
